@@ -8,9 +8,9 @@
             "customOpenIdConnectProviders": {
                 "auth0": {
                     "registration": {
-                        "clientIdSettingName": "mZWzIl8cKtg4uVK1leYsVl0iBifEVnYI",
+                        "clientIdSettingName": "AUTH0_ID",
                         "clientCredential": {
-                            "clientSecretSettingName": "jd9WFZ2J1QKYeiak3YqFjHC3pzDa1DKkip9VSUZI4BoBhU0EUoEB0qnK29VQKx93"
+                            "clientSecretSettingName": "AUTH0_SECRET"
                         },
                         "openIdConnectConfiguration": {
                             "wellKnownOpenIdConfiguration": "https://dev-9zhdd-cc.us.auth0.com/.well-known/openid-configuration"
