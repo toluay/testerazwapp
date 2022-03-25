@@ -1,11 +1,24 @@
 import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
 
 function App() {
-  console.log(`AUTH0_ID: ${process.env.AUTH0_ID}`);
-  console.log(`AUTH0_SECRET: ${process.env.AUTH0_SECRET}`);
-  console.log('All environment variables');
-  console.log(process.env);
+  
+  
+  useEffect(() => {
+     async function fetchData() {
+        const response = await fetchSettings();
+       setAppSettings(response);
+     }
+    
+    fetchData();
+    
+    setInterval(() => {
+        console.log('All environment variables');
+        console.log(process.env);
+    }, 5000)
+  }, []);
+  
   return (
     <div className="App">
       <header className="App-header">
